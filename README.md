@@ -10,8 +10,8 @@
 
 1. [![Run on Repl.it](https://repl.it/badge/github/Persomatey/MusicBot)](https://repl.it/github/Persomatey/MusicBot) 
 2. Before running the code, enter the following commands into the console: 
-	- `npm i ffmpeg-static` to install npm dependencies 
-	- `npm i --save ytdl-core opusscript`
+	- `npm i ffmpeg-static` to install FFmpeg dependencies 
+	- `npm i --save ytdl-core opusscript` to install OpusScript dependencies 
 3. In config.json do the following: 
 	- Type the character you want to be the prefix of every command in the `prefix`
 	- Paste the bot's token into the quotation marks of the `token` variable 
