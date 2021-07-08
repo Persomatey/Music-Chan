@@ -13,8 +13,8 @@ BotLib.loadHandlers(client, 'commands');
 
 const cooldowns = new Discord.Collection(); 
 
-const channelID = "844075685907922998"; 
-const link = "https://youtu.be/5qap5aO4i9A"; 
+//const channelID = "844075685907922998"; 
+//const link = "https://youtu.be/5qap5aO4i9A"; 
 const ytdl = require("ytdl-core"); 
 
 global.botName = ""; 
@@ -23,9 +23,9 @@ global.serverThing;
 client.on('ready', () => 
 {
 	botName = client.user.username; 
-	let channel = client.channels.cache.get(channelID);
+	let channel = client.channels.cache.get(client.botConfig.channel);
 	connection = channel.join()
-	.then(connection => connection.play( ytdl(link, { quality: 'highestaudio' }) ))
+	.then(connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ))
 	.catch(console.error);
 
 	serverThing = client.guilds.cache.get("844075685907922994"); 
