@@ -1,9 +1,5 @@
 const Discord = require('discord.js');
 
-/**
- * This class searches for any command handlers with the message start as their name, or an alias and executes the
- * handler if found.
- */
 module.exports = {
     handle(client, message, cooldowns) {
         // Ignore bot messages and messages that dont start with the prefix defined in the config file

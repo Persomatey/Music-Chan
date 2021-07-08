@@ -1,9 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 
-/**
- * This class autoloads handler functions from the given subdirectory
- */
 module.exports = {
     loadHandlers(client, subdir) {
         // Gather a list of all of our individual handler functions
