@@ -2,7 +2,7 @@
  
 <i>A Discord bot that plays audio from a specified livestream on runtime</i>
 
-<img src="https://raw.githubusercontent.com/Persomatey/LoFiHipBot/main/LoFiGirl.jpg" data-canonical-src="https://raw.githubusercontent.com/Persomatey/LoFiHipBot/main/LoFiGirl.jpg" width="340" height="400" />
+<img src="https://raw.githubusercontent.com/Persomatey/MusicBot/main/LoFiGirl.jpg" data-canonical-src="https://raw.githubusercontent.com/Persomatey/MusicBot/main/LoFiGirl.jpg" width="340" height="400" />
 
 <details>
 <summary>Instructions</summary>
@@ -49,12 +49,26 @@
 <blockquote>
 
 <details>
+<summary>CL-000003</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Added the art to the repo directly 
+	- Changed reference to art in README to this repo's copy 
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+
+<details>
 <summary>CL-000002</summary>
 <blockquote>
 
 - Made the following changes: 
 	- Removed references to the client server from index.js as I am no longer using it 
 	- Added .replit file 
+	- Edited the README to reflect the above changes 
 
 </blockquote>
 </details>
@@ -66,6 +80,7 @@
 - Made the following changes: 
 	- Added the link to the config 
 	- Added the channel ID to the config 
+	- Edited the README to reflect the above changes 
 
 </blockquote>
 </details>
