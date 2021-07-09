@@ -1,4 +1,4 @@
-# MusicBot
+# Music-Chan
  
 <i>A Discord bot that plays audio from a specified livestream on runtime</i>
 
