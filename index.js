@@ -2,8 +2,8 @@ const fs = require('fs');
 const Discord = require('discord.js'); 
 const Config = require('./config.json'); 
 const BotLib = require('./bot.js'); 
-
 const Commands = require('./commandDispatch'); 
+const { keep_alive } = require("./keep_alive");
 
 const client = new Discord.Client(); 
 client.botConfig = Config; 

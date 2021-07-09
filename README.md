@@ -49,6 +49,17 @@
 <blockquote>
 
 <details>
+<summary>CL-000004</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Adding keep_alive.js file and reference in index.js to hopefully help replit keep the project running for longer inbetween UptimeRobot pings 
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+<details>
 <summary>CL-000003</summary>
 <blockquote>
 
