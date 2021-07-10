@@ -49,6 +49,18 @@
 <blockquote>
 
 <details>
+<summary>CL-000005</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Added more support for keeping the replit alive in between UptimeRobot pings 
+	- Added support for keeping the replit alive using UptimeRobot by allowing the IDE to be forwarded 
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+<details>
 <summary>CL-000004</summary>
 <blockquote>
 
