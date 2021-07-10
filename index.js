@@ -3,9 +3,6 @@ const Discord = require('discord.js');
 const Config = require('./config.json'); 
 const BotLib = require('./bot.js'); 
 const Commands = require('./commandDispatch'); 
-const { keep_alive } = require("./keep_alive");
-const http = require("http");
-http.createServer((_, res) => res.end("Alive")).listen(8080); 
 const client = new Discord.Client(); 
 client.botConfig = Config; 
 client.botConfig.rootDir = __dirname; 
@@ -13,6 +10,7 @@ BotLib.loadHandlers(client, 'commands');
 const cooldowns = new Discord.Collection(); 
 const ytdl = require("ytdl-core"); 
 global.botName = ""; 
+const keep_alive = require('./keep_alive.js')
 
 client.on('ready', () => 
 {

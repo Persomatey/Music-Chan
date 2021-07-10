@@ -1,4 +1,6 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-app.listen(port, () => console.log(`Bot running on http://localhost:${port}`));
+var http = require('http');
+
+http.createServer(function (req, res) {
+  res.write("I'm alive! \n(copy this URL into a service like UptimeRobot if you want to keep me running 24/7.)");
+  res.end();
+}).listen(8080);

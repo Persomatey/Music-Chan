@@ -50,6 +50,19 @@
 <blockquote>
 
 <details>
+<summary>CL-000007</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Fixed bug with keep_alive.js (that I think I caused)
+		- Made it a little neater and made the URL's output a bit more informative 
+		- Now just referencing keep_alive.js in index.js directly instead of having http forwarding inside the index 
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+<details>
 <summary>CL-000006</summary>
 <blockquote>
 
