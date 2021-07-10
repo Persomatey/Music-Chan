@@ -10,11 +10,8 @@ const client = new Discord.Client();
 client.botConfig = Config; 
 client.botConfig.rootDir = __dirname; 
 BotLib.loadHandlers(client, 'commands');
-
 const cooldowns = new Discord.Collection(); 
-
 const ytdl = require("ytdl-core"); 
-
 global.botName = ""; 
 
 client.on('ready', () => 
@@ -25,11 +22,19 @@ client.on('ready', () =>
 	.then(connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ))
 	.catch(console.error);
 
+	var checkminutes = 60, checkthe_interval = checkminutes * 60 * 1000; 
+	setInterval(function() 
+	{
+		connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ); 
+	}, checkthe_interval);
+
     console.log('Bot Online');
 });
 
 client.on('message', message => 
 {
+	connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ); 
+	
     if(Commands.handle(client, message, cooldowns)) 
 	{
         return; 

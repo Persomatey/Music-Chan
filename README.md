@@ -50,6 +50,18 @@
 <blockquote>
 
 <details>
+<summary>CL-000006</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Made it so that the bot makes sure that it's playing the stream every 60 minutes and starts playing again 
+	- Made it so that the bot makes sure that it's playing the stream every time a command is entered 
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+<details>
 <summary>CL-000005</summary>
 <blockquote>
 
