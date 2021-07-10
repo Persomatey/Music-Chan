@@ -8,7 +8,7 @@
 <summary>Instructions</summary>
 <blockquote>
 
-1. [![Run on Repl.it](https://repl.it/badge/github/Persomatey/MusicBot)](https://repl.it/github/Persomatey/MusicBot) 
+1. [![Run on Repl.it](https://repl.it/badge/github/Persomatey/MusicBot)](https://repl.it/github/Persomatey/MusicBot) (or IDE of your choice) 
 2. Before running the code, enter the following commands into the console: 
 	- `npm i ffmpeg-static` to install FFmpeg dependencies 
 	- `npm i --save ytdl-core opusscript` to install OpusScript dependencies 
@@ -17,7 +17,8 @@
 	- Paste the bot's token into the quotation marks of the `token` variable 
 	- Paste the the channel ID of the channel you want into the quotation marks of the `channel` variable 
 	- Paste the stream URL of the music you want to listen to into the quotation marks of the `link` variable
-4. Run the replit app 
+4. Run the replit app (or run app in IDE of choice) 
+	- (Optional) For 24/7 pinging at 5 minut intervals, check out [UptimeRobot](https://uptimerobot.com/) 
 5. Hop in the voice channel and listen to some beats 
 
 </blockquote>
