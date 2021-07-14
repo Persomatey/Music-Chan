@@ -2,7 +2,7 @@
  
 <i>A Discord bot that plays audio from a specified livestream on runtime</i>
 
-<img src="https://raw.githubusercontent.com/Persomatey/MusicBot/master/LoFiGirl.jpg?token=AFRVWK7IVN2U7LXLBY5TFYDA6AHK4" data-canonical-src="https://raw.githubusercontent.com/Persomatey/MusicBot/master/LoFiGirl.jpg?token=AFRVWK7IVN2U7LXLBY5TFYDA6AHK4" width="340" height="400" />
+<img src="https://raw.githubusercontent.com/Persomatey/MusicBot/master/LoFiGirl.png?token=AFRVWK7IVN2U7LXLBY5TFYDA6AHK4" data-canonical-src="https://raw.githubusercontent.com/Persomatey/MusicBot/master/LoFiGirl.png?token=AFRVWK7IVN2U7LXLBY5TFYDA6AHK4" width="340" height="400" />
 
 <details>
 <summary>Instructions</summary>
