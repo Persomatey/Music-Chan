@@ -8,6 +8,7 @@
 <summary>Instructions</summary>
 <blockquote>
 
+- [Video Instructions](https://youtu.be/4t32sicjFYI)
 1. [![Run on Repl.it](https://repl.it/badge/github/Persomatey/MusicBot)](https://repl.it/github/Persomatey/MusicBot) (or IDE of your choice) 
 2. Before running the code, enter the following commands into the console: 
 	- `npm i ffmpeg-static` to install FFmpeg dependencies 
