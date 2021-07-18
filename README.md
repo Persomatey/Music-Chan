@@ -51,6 +51,17 @@
 <blockquote>
 
 <details>
+<summary>CL-000008</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Added an activity that displays "Listening to Music" for the bot's activity 
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+<details>
 <summary>CL-000007</summary>
 <blockquote>
 

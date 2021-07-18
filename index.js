@@ -26,6 +26,12 @@ client.on('ready', () =>
 		connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ); 
 	}, checkthe_interval);
 
+	client.user.setActivity(
+	{
+		name: 'music',
+		type: 2
+	});
+
     console.log('Bot Online');
 });
 
