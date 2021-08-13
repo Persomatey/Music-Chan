@@ -51,6 +51,19 @@
 <blockquote>
 
 <details>
+<summary>CL-000010</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Fixed another bug regarding the Senpai stuff 
+		- The Senpai role has to be below Lo-Fi Hip Bot in the heirarchy 
+		- When a Senpai role is deleted after the bot created it, the bot will cry about how senpai won't notice her 
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+<details>
 <summary>CL-000009</summary>
 <blockquote>
 

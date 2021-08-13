@@ -23,25 +23,29 @@ client.on('ready', () =>
 
 	if(channel.guild.roles.cache.find(x => x.name === "Senpai"))
 	{
-		senpaiRole = channel.guild.roles.cache.find(x => x.name === "Senpai").id;
+		senpaiRole = "" + channel.guild.roles.cache.find(x => x.name === "Senpai").id;
 	}
 	else
 	{
-		senpaiRole = channel.guild.roles.create(
+		channel.guild.roles.create(
 		{
 			data:
 			{
 				name:"Senpai",
 				color:"#e91e63",
 			}
-		})
+		}) 
+
+		setTimeout(function()
+		{ 
+			senpaiRole = "" + channel.guild.roles.cache.find(x => x.name === "Senpai").id;
+		}, 1000);
 	}
 
 	var checkminutes = 1, checkthe_interval = checkminutes * 60 * 1000; 
 	setInterval(function() 
 	{
-		connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ); 
-		console.log("Resetting music."); 
+		connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) );  
 	}, checkthe_interval);
 
 	client.user.setActivity(
