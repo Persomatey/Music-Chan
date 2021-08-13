@@ -4,7 +4,7 @@ module.exports =
 	description: "To make yourself LoFi Hip Bot's senpai",
 	usage: "[command]",
 	aliases: ["callmesenpai", "becomesenpai", "makemesenpai", "makemeasenpai", "makemeyoursenpai", "iwanttobesenpai", "iwanttobeyoursenpai", "iwanttobeasenpai"], 
-
+	
 	execute(message, args) 
 	{
 		let member = message.member;
@@ -18,8 +18,6 @@ module.exports =
 		{
 			name = member.nickname; 
 		}
-
-		let senpaiRole = message.guild.roles.cache.find(x => x.name === "Senpai");
 
 		if ( message.member.roles.cache.some(role => role.name === "Senpai") )
 		{

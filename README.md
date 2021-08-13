@@ -51,6 +51,24 @@
 <blockquote>
 
 <details>
+<summary>CL-000009</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Changed the wait time between resets 
+		- Was up to 1 hour 
+		- Now is up to 1 minute 
+	- Made the Senapi functionality a bit more stable in between resets 
+		- Now the bot checks if there is a Senpai role in the guild of the given channel 
+			- If there isn't, create one 
+			- Set the Senpai role to the global variable senpaiRole 
+		- Then the senpai command sets the user's role to the global senpaiRole variable 
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+<details>
 <summary>CL-000008</summary>
 <blockquote>
 

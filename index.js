@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const Config = require('./config.json'); 
 const BotLib = require('./bot.js'); 
 const Commands = require('./commandDispatch'); 
-const client = new Discord.Client(); 
+global.client = new Discord.Client(); 
 client.botConfig = Config; 
 client.botConfig.rootDir = __dirname; 
 BotLib.loadHandlers(client, 'commands');
@@ -11,6 +11,7 @@ const cooldowns = new Discord.Collection();
 const ytdl = require("ytdl-core"); 
 global.botName = ""; 
 const keep_alive = require('./keep_alive.js')
+global.senpaiRole; 
 
 client.on('ready', () => 
 {
@@ -20,10 +21,27 @@ client.on('ready', () =>
 	.then(connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ))
 	.catch(console.error);
 
-	var checkminutes = 60, checkthe_interval = checkminutes * 60 * 1000; 
+	if(channel.guild.roles.cache.find(x => x.name === "Senpai"))
+	{
+		senpaiRole = channel.guild.roles.cache.find(x => x.name === "Senpai").id;
+	}
+	else
+	{
+		senpaiRole = channel.guild.roles.create(
+		{
+			data:
+			{
+				name:"Senpai",
+				color:"#e91e63",
+			}
+		})
+	}
+
+	var checkminutes = 1, checkthe_interval = checkminutes * 60 * 1000; 
 	setInterval(function() 
 	{
 		connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ); 
+		console.log("Resetting music."); 
 	}, checkthe_interval);
 
 	client.user.setActivity(
