@@ -19,7 +19,7 @@
 	- Paste the the channel ID of the channel you want into the quotation marks of the `channel` variable 
 	- Paste the stream URL of the music you want to listen to into the quotation marks of the `link` variable
 4. Run the replit app (or run app in IDE of choice) 
-	- (Optional) For 24/7 pinging at 5 minut intervals, check out [UptimeRobot](https://uptimerobot.com/) 
+	- (Optional) For 24/7 pinging at 5 minute intervals, check out [UptimeRobot](https://uptimerobot.com/) 
 5. Hop in the voice channel and listen to some beats 
 
 </blockquote>
