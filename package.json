@@ -1,0 +1,30 @@
+{
+  "name": "MusicBot",
+  "version": "1.0.0",
+  "description": "<i>A Discord bot that plays audio from a specified livestream on runtime</i>",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/voice": "^0.6.0",
+    "discord-ytdl-core": "^5.0.4",
+    "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium-wrappers": "^0.7.9",
+    "opusscript": "0.0.8",
+    "ytdl-core": "^4.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Persomatey/MusicBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Persomatey/MusicBot/issues"
+  },
+  "homepage": "https://github.com/Persomatey/MusicBot#readme"
+}

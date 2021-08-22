@@ -38,7 +38,6 @@ module.exports =
 		catch(error) 
 		{
             console.error(error);
-            //message.reply('Sorry! I ran into an error trying to do that!');
         }
     }
 }
