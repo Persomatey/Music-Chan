@@ -1,38 +1,42 @@
 const Discord = require('discord.js');
 
-module.exports = {
-    handle(client, message, cooldowns) {
-        // Ignore bot messages and messages that dont start with the prefix defined in the config file
+module.exports = 
+{
+    handle(client, message, cooldowns) 
+	{
         if(!message.content.startsWith(client.botConfig.prefix) || message.author.bot) return;
 
-        // Split commands and arguments from message so they can be passed to functions
         const args = message.content.slice(client.botConfig.prefix.length).split(/ +/);
         const commandName = args.shift().toLowerCase();
 
-        // If the command isn't in the  command folder, move on
-        const command = client.commands.get(commandName)
-            || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-        if(!command) return;
+        const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
-        // If the command requires arguments, make sure they're there.
-        if (command.args && !args.length) {
+        if(!command)
+		{
+			return;
+		}
+
+        if (command.args && !args.length) 
+		{
             let reply = 'That command requires more details!';
 
-            // If we have details on how to use the args, provide them
-            if (command.usage) {
+            if (command.usage) 
+			{
                 reply += `\nThe proper usage would be: \`${client.botConfig.prefix}${command.name} ${command.usage}\``;
             }
 
-            // Send a reply from the bot about any error encountered
             return message.channel.send(reply);
         }
 
-        try {
-            // Run the command
-            command.execute(message, args).catch((err) => {
+        try 
+		{
+            command.execute(message, args).catch((err) => 
+			{
                 console.error(`Failed running command handler ${command.name}: "${err.message}"`)
             });
-        } catch(error) {
+        } 
+		catch(error) 
+		{
             console.error(error);
             //message.reply('Sorry! I ran into an error trying to do that!');
         }

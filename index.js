@@ -42,10 +42,13 @@ client.on('ready', () =>
 		}, 1000);
 	}
 
-	var checkminutes = 1, checkthe_interval = checkminutes * 60 * 1000; 
+	var checkminutes = 15, checkthe_interval = checkminutes * 60 * 1000; 
 	setInterval(function() 
 	{
-		connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) );  
+		connection = channel.join()
+			.then(connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ))
+			.catch(console.error);
+
 	}, checkthe_interval);
 
 	client.user.setActivity(
@@ -57,10 +60,19 @@ client.on('ready', () =>
     console.log('Bot Online');
 });
 
+client.on('voiceStateUpdate', (oldMember, newMember) => 
+{
+    if(newMember.channelID === client.botConfig.channel) 
+	{
+		let channel = client.channels.cache.get(client.botConfig.channel);
+        connection = channel.join()
+			.then(connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ))
+			.catch(console.error);
+    } 
+})
+
 client.on('message', message => 
 {
-	connection => connection.play( ytdl(client.botConfig.link, { quality: 'highestaudio' }) ); 
-	
     if(Commands.handle(client, message, cooldowns)) 
 	{
         return; 

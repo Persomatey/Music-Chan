@@ -51,6 +51,21 @@
 <blockquote>
 
 <details>
+<summary>CL-000011</summary>
+<blockquote>
+
+- Made the following changes: 
+	- Added Take a Breath to the game.js command 
+	- Clarified some documentation in the game.js command 
+	- Made it so that the bot resets it's connection with the voice channel every 15 minutes 
+	- Made it so that the bot resets it's connection with the voice channel when a members joins the voice channel 
+		- Only does this when the voice channelID that the user enters is the same as the channelID in config  
+	- Edited the README to reflect the above changes 
+
+</blockquote>
+</details>
+
+<details>
 <summary>CL-000010</summary>
 <blockquote>
 

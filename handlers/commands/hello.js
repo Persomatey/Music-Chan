@@ -37,7 +37,7 @@ module.exports =
 				break;
 			case 7:
 				mes = "Hello! Did you know that you can connect to the '24/7 Chill Beats' voice channel? You can't talk in it, but you can hear my play some music!"; 
-				reak;
+				break;
 			case 8:
 				mes = "Hello, there!"; 
 				break;

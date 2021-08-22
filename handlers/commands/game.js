@@ -9,7 +9,7 @@ module.exports =
 	{
 		let mes = ""; 
 
-		let rand = Math.floor(Math.random() * 7); // random number between 0 and 2
+		let rand = Math.floor(Math.random() * 8); // random number between 0 and 7
 
 		switch(rand) 
 		{
@@ -54,6 +54,12 @@ module.exports =
 				"It is a game created by Hunter Goodin in the Unity game engine for the GMTK 2021 Game Jam which had the theme 'Joined Together' " + "\n" + 
 				"A top-down Zelda-like where you play as two characters tied together by a rope. It is best played with a friend!" + "\n" + 
 				"https://persomatey.itch.io/funem"; 
+				break;
+			case 7:
+				mes = "Why not try Take a Breath?" + "\n" + 
+				"It is a game created by Gerardo Bonnet in the Unity game engine for the Mini Jam 73 Game Jam which had the theme 'Power' " + "\n" + 
+				"Your spaceship is low on power and you're trapped in an asteroid belt! You can only divert power to one system at a time! Activate your thrusters to move, bash asteroids with your shield, or refill your oxygen. Navigate your way to each of the power cores then make your way out of the asteroid belt. Just don't forget to Take a Breath." + "\n" + 
+				"https://screams-from-the-cellar.itch.io/take-a-breath"; 
 				break;
 			default:
 		}
