@@ -5,7 +5,7 @@
 <img src="https://raw.githubusercontent.com/Persomatey/MusicBot/master/LoFiGirl.png?token=AFRVWK7IVN2U7LXLBY5TFYDA6AHK4" data-canonical-src="https://raw.githubusercontent.com/Persomatey/MusicBot/master/LoFiGirl.png?token=AFRVWK7IVN2U7LXLBY5TFYDA6AHK4" width="340" height="400" />
 
 <details>
-<summary>Instructions</summary>
+<summary>How To Set Up</summary>
 <blockquote>
 
 - [Video Instructions](https://youtu.be/4t32sicjFYI)
